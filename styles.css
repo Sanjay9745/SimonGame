@@ -139,5 +139,12 @@ body {
   right:20px;
   top:100px;
 }
+  #restart-button{
+  padding:40px 20px;
+  }
+  #score-board {
+  font-size: 1.5rem;
+  margin:  5%;
+}
   }
   
