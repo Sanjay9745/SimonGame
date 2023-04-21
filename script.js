@@ -2,7 +2,7 @@ var colorNumber = [];
 var clickNum =[]
 var level = 1;
 var audio = new Audio('sounds/background.mp3');
-audio.play();
+
 function muteAudio(){
  
     $('.mute-audio').css("display","inline-block");
@@ -24,14 +24,14 @@ function randomNumGen(){
 
 
 $("#green").click(()=>{
-    console.log("Green");
+    
     pressed("green",1);
     var audio = new Audio('sounds/green.mp3');
     audio.play();
     
 });
 $("#red").click(()=>{
-    console.log("red");
+    
     pressed("red",2);
     var audio = new Audio('sounds/red.mp3');
     audio.play();
@@ -39,14 +39,14 @@ $("#red").click(()=>{
 })
 
 $("#yellow").click(()=>{
-    console.log("yellow");
+    
     pressed("yellow",3);
     var audio = new Audio('sounds/yellow.mp3');
     audio.play();
    
 })
 $("#blue").click(()=>{
-    console.log("blue");
+    
     pressed("blue",4);
     var audio = new Audio('sounds/blue.mp3');
     audio.play();
@@ -61,7 +61,7 @@ function pressed(color,num){
   clickNum.push(num);
   
    
-        console.log("count is"+clickNum.length)
+        
         if(clickNum[clickNum.length-1]===colorNumber[clickNum.length-1]){
          
         }else{
@@ -76,7 +76,7 @@ function pressed(color,num){
          countColor = colorNumber.length-1;
         countClick = clickNum.length-1;
         if(colorNumber[countColor]===clickNum[countClick]){
-            console.log("colorNumber[countColor]===clickNum[countClick]")
+            
             randomNumGen();
             countColor = colorNumber.length-1;
            var blinkColor = checkColor(colorNumber[countColor])
