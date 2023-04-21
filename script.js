@@ -19,7 +19,7 @@ function randomNumGen(){
     var randomNum = Math.floor(Math.random()*4)+1;
   
     colorNumber.push(randomNum);
-    console.log(colorNumber)
+    
 }
 
 
@@ -63,10 +63,6 @@ function pressed(color,num){
    
         console.log("count is"+clickNum.length)
         if(clickNum[clickNum.length-1]===colorNumber[clickNum.length-1]){
-           console.log("correct")
-          
-           console.log(colorNumber);
-           console.log(clickNum);
          
         }else{
          restart();
@@ -86,9 +82,7 @@ function pressed(color,num){
            var blinkColor = checkColor(colorNumber[countColor])
            setTimeout(()=>{
             blink(blinkColor);
-            console.log("Blinked");
-            console.log(colorNumber);
-            console.log(clickNum);
+          
            },1000)
            clickNum =[];
            level++;
@@ -158,7 +152,7 @@ function start(){
     var blinkColor = checkColor(colorNumber[countColor])
     setTimeout(()=>{
      blink(blinkColor);
-     console.log("Blinked");
+     
     },1000)
     
 }
